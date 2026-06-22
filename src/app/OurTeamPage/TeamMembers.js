@@ -2,7 +2,7 @@ export const TeamMembers = [
     {
         id: 1,
         name: "Yatharth Gupta",
-        position: "Club Head",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001083@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/yatharth-g/",
@@ -12,7 +12,7 @@ export const TeamMembers = [
     {
         id: 2,
         name: "Ashutosh S",
-        position: "Head of Outreach",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001005@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/ashutosh-samantaray-531516249/",
@@ -22,7 +22,7 @@ export const TeamMembers = [
     {
         id: 3,
         name: "Madhav Kadam",
-        position: "Head of Events",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001027@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/madhav-kadam/",
@@ -32,7 +32,7 @@ export const TeamMembers = [
     {
         id: 4,
         name: "Rupal Shah",
-        position: "Head of Projects",
+        position: "Alumni",
         branch: "EE",
         email: "ee210002065@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/rupal-shah-a44a66227/",
@@ -42,7 +42,7 @@ export const TeamMembers = [
     {
         id: 38,
         name: "Mihir Karandikar",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse200001044@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/mihir-karandikar-505177214/",
@@ -53,7 +53,7 @@ export const TeamMembers = [
     {
         id: 8,
         name: "Atharva Mohite",
-        position: "Member",
+        position: "Alumni",
         branch: "ME",
         email: "me200003016@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/atharva-mohite-4368601bb",
@@ -63,7 +63,7 @@ export const TeamMembers = [
     {
         id: 10,
         name: "Amit Kumar Makkad",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse200001003@iiti.ac.in",
         linkedin: "https://in.linkedin.com/in/amit-kumar-makkad-09167b214",
@@ -73,7 +73,7 @@ export const TeamMembers = [
     {
         id: 17,
         name: "Bhavya Contractor",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse200001018@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/bhavya-contractor-b47784214",
@@ -83,7 +83,7 @@ export const TeamMembers = [
     {
         id: 19,
         name: "Kshitij Bhat",
-        position: "Member",
+        position: "Alumni",
         branch: "ME",
         email: "me200003042@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/kshitij-bhat/",
@@ -93,7 +93,7 @@ export const TeamMembers = [
     {
         id: 20,
         name: "Parth Bhore",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse200001015@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/parth-bhore",
@@ -103,7 +103,7 @@ export const TeamMembers = [
     {
         id: 40,
         name: "Sairaj Loke",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001035@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/sairaj-loke-24370b237",
@@ -113,7 +113,7 @@ export const TeamMembers = [
     {
         id: 21,
         name: "Priyansh Jaseja",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse200001063@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/priyansh-jaseja",
@@ -123,7 +123,7 @@ export const TeamMembers = [
     {
         id: 39,
         name: "Madhusudhan Reddy",
-        position: "Member",
+        position: "Alumni",
         branch: "EE",
         email: "ee210002075@iiti.ac.in",
         linkedin:
@@ -134,7 +134,7 @@ export const TeamMembers = [
     {
         id: 5,
         name: "G Aakash",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001015@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/g-aakash-6a001523b/",
@@ -144,7 +144,7 @@ export const TeamMembers = [
     {
         id: 6,
         name: "Jha Rohan",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "ee210002041@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/rohan-jha-aa2177231/",
@@ -155,7 +155,7 @@ export const TeamMembers = [
     {
         id: 7,
         name: "Vishnu V Jaddipal",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001078@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/vishnu-jaddipal-28b407243/",
@@ -166,7 +166,7 @@ export const TeamMembers = [
     {
         id: 9,
         name: "Shivankar Sharma",
-        position: "Member",
+        position: "Alumni",
         branch: "EE",
         email: "ee210002071@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/shivankar-sharma-b13203223/",
@@ -177,7 +177,7 @@ export const TeamMembers = [
     {
         id: 11,
         name: "Surya karthikeya",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001041@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/surya-karthikeya-327255228",
@@ -187,7 +187,7 @@ export const TeamMembers = [
     {
         id: 12,
         name: "Yash Vashistha",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001082@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/yash-vashistha/",
@@ -197,7 +197,7 @@ export const TeamMembers = [
     {
         id: 13,
         name: "Krish Agrawal",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001034@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/krish-agrawal-472784146/",
@@ -207,7 +207,7 @@ export const TeamMembers = [
     {
         id: 14,
         name: "Tanisha Sahu",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001071@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/tanisha-sahu-197882232/",
@@ -217,7 +217,7 @@ export const TeamMembers = [
     {
         id: 15,
         name: "Samip Shah",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001061@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/samip-shah-b8435b243/",
@@ -227,7 +227,7 @@ export const TeamMembers = [
     {
         id: 16,
         name: "Prajakta Darade",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001052@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/prajakta-darade-40b585237/",
@@ -238,7 +238,7 @@ export const TeamMembers = [
     {
         id: 18,
         name: "Khushi Sawla",
-        position: "Member",
+        position: "Alumni",
         branch: "EE",
         email: "ee210002045@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/khushi-sawla-303458222",
@@ -248,7 +248,7 @@ export const TeamMembers = [
     {
         id: 29,
         name: "Pradeep Kumar.R",
-        position: "Member",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001058@iiti.ac.in",
         linkedin:
@@ -260,7 +260,7 @@ export const TeamMembers = [
     {
         id: 30,
         name: "Ayush Awasthi",
-        position: "Member",
+        position: "Alumni",
         branch: "ME",
         email: "me220003016@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/ayush-awasthi-a232b8254",
@@ -270,7 +270,7 @@ export const TeamMembers = [
     {
         id: 32,
         name: "Kaustuv Devmishra",
-        position: "Member",
+        position: "Alumni",
         branch: "ME",
         email: "me220003045@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/kaustuv-devmishra-372868253/",
@@ -281,7 +281,7 @@ export const TeamMembers = [
     {
         id: 22,
         name: "Atharva Nanoti",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001013@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/atharva-nanoti-21973425b",
@@ -291,7 +291,7 @@ export const TeamMembers = [
     {
         id: 23,
         name: "Soham Pandit",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "ME",
         email: "me220003080@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/soham-pandit-379b35255",
@@ -301,7 +301,7 @@ export const TeamMembers = [
     {
         id: 24,
         name: "J. Dinesh",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse210001026@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/dinesh-kumar-b09852233",
@@ -311,7 +311,7 @@ export const TeamMembers = [
     {
         id: 26,
         name: "Sai Pranay Deep",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001034@iiti.ac.in",
         linkedin:
@@ -322,7 +322,7 @@ export const TeamMembers = [
     {
         id: 27,
         name: "Aakash Sangvikar",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "MEMS",
         email: "mems210005039@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/aakash-sangvikar/",
@@ -332,7 +332,7 @@ export const TeamMembers = [
     {
         id: 28,
         name: "Lovely",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "EE",
         email: "ee220002046@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/lovely-bhardwaj-89603425b/",
@@ -342,7 +342,7 @@ export const TeamMembers = [
     {
         id: 31,
         name: "Aadish Jain",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001001@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/aadish-jain-177ab925a/",
@@ -352,7 +352,7 @@ export const TeamMembers = [
     {
         id: 33,
         name: "Aman Poddar",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "EE",
         email: "ee220002006@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/aman-poddar-55050b26a",
@@ -362,7 +362,7 @@ export const TeamMembers = [
     {
         id: 34,
         name: "Abhinav gangil",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001002@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/abhinav-gangil-193594255",
@@ -372,7 +372,7 @@ export const TeamMembers = [
     {
         id: 35,
         name: "Raina Tathed",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "EE",
         email: "ee220002067@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/raina-tathed-5650a025b",
@@ -382,7 +382,7 @@ export const TeamMembers = [
     {
         id: 36,
         name: "Misha Jain",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001045@iiti.ac.in",
         linkedin: "https://www.linkedin.com/in/misha-jain-0bb0a125b/",
@@ -392,7 +392,7 @@ export const TeamMembers = [
     {
         id: 37,
         name: "Shaurya khetarpal",
-        position: "Volunteer",
+        position: "Alumni",
         branch: "CSE",
         email: "cse220001074@iiti.ac.in",
         linkedin:

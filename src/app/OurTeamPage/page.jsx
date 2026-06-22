@@ -1,27 +1,42 @@
 import Head from "next/head";
 import Card from "../../components/Card";
-import { TeamMembers } from "./Member";
 import React from "react";
-import { Alumni } from "./Alumni";
+// ISOLATION: Commented out the members import
+// import { getMembers } from "src/memberService/memberService.ts";
+import { getAlumni } from "src/memberService/alumniService.ts";
+
+
 export const metadata = {
   title: "Our Team",
 };
 
-export default function OurTeamPage() {
+export default async function OurTeamPage() {
+  // ISOLATION: Commented out the members fetch. 
+  // const members = (await getMembers()) || [];
+  const alumni = (await getAlumni()) || [];
+  console.log("Alumni data fetched:", alumni); // Debugging log
+
   return (
     <div id="">
-      <h1 className="text-center py-20  text-3xl md:text-5xl font-bold z-[10000]">
+      {
+        
+      
+      <h1 className="text-center py-20 text-3xl md:text-5xl font-bold z-[10000]">
         Our Team Members
       </h1>
+      /* DEBUGGING ISOLATION: 
       <div className="mx-auto !h-fit ">
-        <Card
-          className="!my-0  !ring-orange-500 !ring-opacity-80 mx-auto !ring-[10px] rounded-xl"
-          ele={TeamMembers[0]}
-          index={TeamMembers[0].id}
-        />
+        {members.length > 0 && (
+          <Card
+            className="!my-0 !ring-orange-500 !ring-opacity-80 mx-auto !ring-[10px] rounded-xl"
+            ele={members[0]}
+            index={members[0].id}
+          />
+        )}
       </div>
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
-        {TeamMembers.map((ele, index) => {
+        {members.map((ele, index) => {
           return (
             <React.Fragment key={ele.id}>
               {ele.position !== "Club Head" && (
@@ -42,22 +57,31 @@ export default function OurTeamPage() {
           );
         })}
       </div>
-      <h1 className="text-center py-20  text-3xl md:text-5xl font-bold z-[10000]">
+      */}
+
+      <h1 className="text-center py-20 text-3xl md:text-5xl font-bold z-[10000]">
         Our Alumni
       </h1>
+      
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
-        {Alumni.map((ele, index) => {
-          return (
-            <React.Fragment key={ele.id}>
-              <div>
-                <Card
-                  className={`${"!ring-[10px] !ring-rose-600 !ring-opacity-70"}`}
-                  ele={ele}
-                />
-              </div>
-            </React.Fragment>
-          );
-        })}
+        {alumni.length > 0 ? (
+          alumni.map((ele) => {
+            return (
+              <React.Fragment key={ele.id}>
+                <div>
+                  <Card
+                    className="!ring-[10px] !ring-rose-600 !ring-opacity-70"
+                    ele={ele}
+                  />
+                </div>
+              </React.Fragment>
+            );
+          })
+        ) : (
+          <p className="text-center col-span-full text-gray-400 mt-5">
+            No alumni data found yet. Please check your Firebase database.
+          </p>
+        )}
       </div>
     </div>
   );
