@@ -2,7 +2,7 @@ import Head from "next/head";
 import Card from "../../components/Card";
 import React from "react";
 // ISOLATION: Commented out the members import
-// import { getMembers } from "src/memberService/memberService.ts";
+import { getMembers } from "src/memberService/memberService.ts";
 import { getAlumni } from "src/memberService/alumniService.ts";
 
 
@@ -14,17 +14,15 @@ export default async function OurTeamPage() {
   // ISOLATION: Commented out the members fetch. 
   // const members = (await getMembers()) || [];
   const alumni = (await getAlumni()) || [];
+  const members = (await getMembers()) || [];
   console.log("Alumni data fetched:", alumni); // Debugging log
+  console.log("Members data fetched:", members); // Debugging log
 
   return (
     <div id="">
-      {
-        
-      
       <h1 className="text-center py-20 text-3xl md:text-5xl font-bold z-[10000]">
         Our Team Members
       </h1>
-      /* DEBUGGING ISOLATION: 
       <div className="mx-auto !h-fit ">
         {members.length > 0 && (
           <Card
@@ -36,28 +34,29 @@ export default async function OurTeamPage() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3">
-        {members.map((ele, index) => {
-          return (
-            <React.Fragment key={ele.id}>
-              {ele.position !== "Club Head" && (
-                <div>
-                  <Card
-                    className={`${
-                      ele.position.includes("Head") &&
-                      "!ring-[10px] !ring-purple-500 !ring-opacity-70"
-                    } ${
-                      ele.position.includes("Member") &&
-                      "!ring-[10px] !ring-blue-500 !ring-opacity-70"
-                    }`}
-                    ele={ele}
-                  />
-                </div>
-              )}
-            </React.Fragment>
-          );
-        })}
+        {members
+          .filter((_, i) => i !== 0) // skip the first member already rendered above
+          .map((ele) => {
+            return (
+              <React.Fragment key={ele.id}>
+                {ele.position !== "Club Head" && (
+                  <div>
+                    <Card
+                      className={`${
+                        ele.position.includes("Head") &&
+                        "!ring-[10px] !ring-purple-500 !ring-opacity-70"
+                      } ${
+                        ele.position.includes("Member") &&
+                        "!ring-[10px] !ring-blue-500 !ring-opacity-70"
+                      }`}
+                      ele={ele}
+                    />
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
       </div>
-      */}
 
       <h1 className="text-center py-20 text-3xl md:text-5xl font-bold z-[10000]">
         Our Alumni

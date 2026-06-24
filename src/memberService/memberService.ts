@@ -7,7 +7,7 @@ export const getMembers = async () => {
   
   try {
     // Look specifically at the "members" node in your Realtime DB
-    const snapshot = await get(child(dbRef, `members`));
+    const snapshot = await get(child(dbRef, `team`));
     
     if (snapshot.exists()) {
       return Object.values(snapshot.val());

@@ -1,54 +1,22 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
 
 export default function Card({ ele, className }) {
   const currentTime = new Date();
   const year = currentTime.getFullYear();
+  const [showContact, setShowContact] = useState(false);
 
-  useEffect(() => {
-    const buttons = document.querySelectorAll(`.card-buttons${ele.id} button`);
-    const sections = document.querySelectorAll(`.card-section${ele.id}`);
-    const card = document.querySelector(`.card${ele.id}`);
-
-    const handleButtonClick = (e) => {
-      const targetSection = e.target.getAttribute("data-section");
-      const section = document.querySelector(targetSection);
-
-      if (!card || !section) return;
-
-      targetSection !== `#about${ele.id}`
-        ? card.classList.add("is-active")
-        : card.classList.remove("is-active");
-
-      card.setAttribute("data-state", targetSection);
-
-      sections.forEach((s) => s.classList.remove("is-active"));
-      buttons.forEach((b) => b.classList.remove("is-active"));
-
-      e.target.classList.add("is-active");
-      section.classList.add("is-active");
-    };
-
-    buttons.forEach((btn) => {
-      btn.addEventListener("click", handleButtonClick);
-    });
-
-    return () => {
-      buttons.forEach((btn) => {
-        btn.removeEventListener("click", handleButtonClick);
-      });
-    };
-  }, [ele.id]);
+  const isContact = showContact;
 
   return (
     <div className="my-10" id={ele.id}>
       <Fade bottom>
         <div
-          className={`card${ele.id} card ${className}`}
-          data-state={`#about${ele.id}`}
+          className={`card${ele.id} card ${className} ${isContact ? "is-active" : ""}`}
+          data-state={isContact ? "contact" : "about"}
         >
           <div className="card-header">
             <div
@@ -143,7 +111,7 @@ export default function Card({ ele, className }) {
             </div>
 
             <div
-              className={`card-section${ele.id} card-section`}
+              className={`card-section${ele.id} card-section ${isContact ? "is-active" : ""}`}
               id={`contact${ele.id}`}
             >
               <div className="card-content">
@@ -157,10 +125,18 @@ export default function Card({ ele, className }) {
             </div>
 
             <div className={`card-buttons${ele.id} card-buttons`}>
-              <button data-section={`#about${ele.id}`} className="is-active">
+              <button
+                onClick={() => setShowContact(false)}
+                className={!isContact ? "is-active" : ""}
+              >
                 ABOUT
               </button>
-              <button data-section={`#contact${ele.id}`}>CONTACT</button>
+              <button
+                onClick={() => setShowContact(true)}
+                className={isContact ? "is-active" : ""}
+              >
+                CONTACT
+              </button>
             </div>
           </div>
         </div>
@@ -187,16 +163,14 @@ export default function Card({ ele, className }) {
             box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
           }
 
-          .card[data-state="#about"] {
-            height: 450px;
+          .card[data-state="about"],
+          .card[data-state="contact"] {
+            height: auto;
           }
 
-          .card[data-state="#about"] .card-main {
+          .card[data-state="about"] .card-main,
+          .card[data-state="contact"] .card-main {
             padding-top: 0;
-          }
-
-          .card[data-state="#contact"] {
-            height: 430px;
           }
 
           .card.is-active .card-header {
@@ -246,18 +220,17 @@ export default function Card({ ele, className }) {
             transition: 0.3s;
           }
 
-          .card-cover {
-            width: 100%;
-            height: 98px;
-            position: absolute;
-            top: -20%;
-            filter: blur(12px);
-            left: 0;
-            background-position: center;
-            background-size: cover;
-            transform: scale(1.2);
-            transition: 0.5s;
-          }
+          // .card-cover {
+          //   width: 100%;
+          //   height: 98px;
+          //   position: absolute;
+          //   top: -20%;
+          //   left: 0;
+          //   background-position: center;
+          //   background-size: cover;
+          //   transform: scale(1.2);
+          //   transition: 0.5s;
+          // }
 
           .card-avatar {
             width: 100px;
