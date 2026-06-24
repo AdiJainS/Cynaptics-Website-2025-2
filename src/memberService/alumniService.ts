@@ -5,7 +5,7 @@ export const getAlumni = async () => {
   const dbRef = ref(getDatabase(app));
   try {
     // Look specifically at the "alumni" node you just created
-    const snapshot = await get(child(dbRef, `users`));
+    const snapshot = await get(child(dbRef, `alumni`));
     
     if (snapshot.exists()) {
       const data = snapshot.val();
